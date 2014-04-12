@@ -70,6 +70,12 @@ class FeatureBannerDecorator extends DataExtension {
 		}
 	}
 
+	private static $includeCSS = true;
+
+	public static function setIncludeCSS( $val ) {
+		static::$includeCSS = $val;
+	}
+
 	/**
 	 * Render the FeatureBanners
 	 * @return String
@@ -78,6 +84,9 @@ class FeatureBannerDecorator extends DataExtension {
 		// Check if there are any FeatureBanners, before doing further checks
 		if( !$this->owner->FeatureBanners()->Count() )
 			return false;
+		if( static::$includeCSS ) {
+			Requirements::css( FEATURE_BANNERS_FOLDER . DIRECTORY_SEPARATOR . 'css' . DIRECTORY_SEPARATOR . 'feature-banners.min.css' );
+		}
 
 		$templates = array( 'FeatureBanners' );
 		$classes = array_reverse( ClassInfo::ancestry( $this->owner->ClassName ) );

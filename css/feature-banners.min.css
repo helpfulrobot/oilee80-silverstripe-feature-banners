@@ -1,12 +1,28 @@
-.feature-banners {
+.feature-banners .item-group {
+  border: 1px solid #000;
+  border-radius: 5px;
   height: 250px;
+  margin: 2% 0.5%;
+  overflow: hidden;
   position: relative;
-  width: 100%;
 }
-.feature-banners .item {
+.feature-banners .item-group .item {
   height: 100%;
-  left: 0;
-  position: absolue;
+  left: 100%;
+  position: absolute;
   top: 0;
   width: 100%;
+  -webkit-transition: left 1s ease-in-out;
+  -moz-transition: left 1s ease-in-out;
+  -o-transition: left 1s ease-in-out;
+  transition: left 1s ease-in-out;
+}
+.feature-banners .item-group .item.active {
+  left: 0;
+  z-index: 1;
+}
+.feature-banners .item-group .item h1 {
+  left: 10px;
+  position: absolute;
+  top: 10px;
 }
