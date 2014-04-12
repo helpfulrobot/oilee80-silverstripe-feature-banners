@@ -1,0 +1,19 @@
+{
+	"name": "oilee80/silverstripe-feature-banners",
+	"description": "SilverStripe Feature Banners",
+	"type": "silverstripe-module",
+	"keywords": ["silverstripe", "banner", "banners", "feature", "module"],
+	"license": "BSD-3-Clause",
+	"authors": [
+		{
+			"name": "Lee Bradley",
+			"email": "bradley.lee80@googlemail.com"
+		}
+	],
+	"require": {
+		"silverstripe/framework": "3.*"
+	},
+	"extra": {
+		"installer-name": "feature-banners"
+	}
+}
