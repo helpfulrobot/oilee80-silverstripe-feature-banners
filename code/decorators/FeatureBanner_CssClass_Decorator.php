@@ -5,7 +5,7 @@
  * @param FeatureBanner $owner
  * @todo Change field to multi data field as opposed to just a single option
  */
-class FeatureBanner_Class_Decorator extends DataExtenstion {
+class FeatureBanner_CssClass_Decorator extends DataExtenstion {
 
 	private static $db = array(
 		'CssClass' => 'Varchar'
