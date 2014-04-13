@@ -18,6 +18,9 @@ You can add extra fields to the FeatureBanner using further Decorators, some are
   * Adds ability to link to another page on or of the site
 * FeatureBanner_Expiry_Decorator
   * Adds ability to set Publish & Expiry DateTimes for the Banner
+* FeatureBanner_CssClass_Decorator
+  * Adds ability to set a css class to the FeatureBanner
+  * Useful classes would be `Dark` and `Light` but others such as `Left` and `Right` may also be useful
 
 # Development
 
