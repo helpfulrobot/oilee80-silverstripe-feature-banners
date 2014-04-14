@@ -1,7 +1,8 @@
 <section class="feature-banners">
 	<ul class="item-group">
 		<% loop FeatureBanners %>
-			<li class="feature-banner item $FirstLast $CssClass
+			<li class="feature-banner item $FirstLast
+				<% if CssClass.exists %>$CssClass.Implode(" ")<% end_if %>
 				<% if Image %>has-image<% end_if %>
 				<% if First %>active<% end_if %>
 				<% if PrimaryLink && PrimaryLinkText%>has-primary-link<% end_if %>

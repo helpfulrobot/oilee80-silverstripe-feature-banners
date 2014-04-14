@@ -11,7 +11,8 @@
 		}
 	],
 	"require": {
-		"silverstripe/framework": "3.*"
+		"silverstripe/framework": "3.*",
+		"silverstripe/multivaluefield": "dev-master"
 	},
 	"extra": {
 		"installer-name": "feature-banners"

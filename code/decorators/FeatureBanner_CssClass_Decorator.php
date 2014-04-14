@@ -8,7 +8,7 @@
 class FeatureBanner_CssClass_Decorator extends DataExtension {
 
 	private static $db = array(
-		'CssClass' => 'Varchar'
+		'CssClass' => 'MultiValueField'
 	);
 
 	private static $cssClasses = array( '' => '< None >' );
@@ -24,7 +24,7 @@ class FeatureBanner_CssClass_Decorator extends DataExtension {
 	public function updateCMSFields( FieldList $fields ) {
 		$fields->addFieldToTab(
 			'Root.Main',
-			new DropdownField(
+			new MultiValueDropdownField(
 				'CssClass', 
 				_t(
 					'FEATURE_BANNERS.CMSFields.CssClass',
