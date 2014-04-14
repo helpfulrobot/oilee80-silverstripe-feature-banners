@@ -5,13 +5,13 @@
  * @param FeatureBanner $owner
  * @todo Change field to multi data field as opposed to just a single option
  */
-class FeatureBanner_CssClass_Decorator extends DataExtenstion {
+class FeatureBanner_CssClass_Decorator extends DataExtension {
 
 	private static $db = array(
 		'CssClass' => 'Varchar'
 	);
 
-	private static $cssClasses = array();
+	private static $cssClasses = array( '' => '< None >' );
 
 	/**
 	 * @param String $class The css Class that will be rendered
@@ -30,7 +30,8 @@ class FeatureBanner_CssClass_Decorator extends DataExtenstion {
 					'FEATURE_BANNERS.CMSFields.CssClass',
 					'css Class',
 					'Feature Banners `CssClass` Label'
-				)
+				),
+				static::$cssClasses
 			)
 		);
 	}
