@@ -1,9 +1,9 @@
 {
   "name": "feature-banners",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "Gruntfile.js",
   "author": "Lee Bradley",
-  "description": "Feature Banners",
+  "description": "Feature Banners Module for Silverstripe with Decorators for additional css,primary/secondary links, description and publish & expiry timestamps",
   "repository": {
     "type": "git",
     "url": "git@github.com:oilee80/silverstripe-feature-banners.git"

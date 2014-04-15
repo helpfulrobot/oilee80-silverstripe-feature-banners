@@ -63,6 +63,11 @@ class FeatureBannerDecorator extends DataExtension {
 	 * @return ManyManyList The set of components
 	 */
 	public function FeatureBanners( $filter = "", $sort = "", $join = "", $limit = "" ) {
+		if( trim( $sort ) ) {
+			$sort = sprintf( '%s, Sort ASC' );
+		} else {
+			$sort = 'Sort ASC';
+		}
 		if( $this->owner->InheritFeatureBanners && $parent = $this->owner->Parent() ) {
 			return $parent->FeatureBanners( $filter, $sort, $join, $limit );
 		} else {
@@ -82,7 +87,7 @@ class FeatureBannerDecorator extends DataExtension {
 	 */
 	public function FeatureBannersHTML() {
 		// Check if there are any FeatureBanners, before doing further checks
-		if( !$this->owner->FeatureBanners()->Count() )
+		if( !$this->FeatureBanners()->Count() )
 			return false;
 		if( static::$includeCSS ) {
 			Requirements::css( FEATURE_BANNERS_FOLDER . DIRECTORY_SEPARATOR . 'css' . DIRECTORY_SEPARATOR . 'feature-banners.min.css' );

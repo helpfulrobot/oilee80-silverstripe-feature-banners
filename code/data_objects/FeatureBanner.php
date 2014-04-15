@@ -23,5 +23,4 @@ class FeatureBanner extends DataObject {
 	private static $has_one = array(
 		'Image' => 'Image'
 	);
-
 }
