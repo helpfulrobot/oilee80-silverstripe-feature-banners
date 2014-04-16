@@ -3,7 +3,7 @@
 /**
  * Decorator for FeatureBanner
  * @param FeatureBanner $owner
- * @todo Change field to multi data field as opposed to just a single option
+ * @todo Change $cssClasses to a YAML config
  */
 class FeatureBanner_CssClass_Decorator extends DataExtension {
 

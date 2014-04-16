@@ -1,0 +1,11 @@
+en_GB:
+  FEATURE_BANNERS:
+    CMSFields:
+      CssClass: 'css Class'
+      PrimaryLink_Text: 'Primary Link Text'
+      PrimaryLink_Link: 'Primary Link'
+      SecondaryLinkText: 'Secondary Link Text'
+      SecondaryLink: 'Secondary Link'
+      FeatureBannersTab: 'Feature Banners'
+      InheritFeatureBanners: 'Inherit Feature Banners'
+      FeatureBanners: 'Feature Banners'
