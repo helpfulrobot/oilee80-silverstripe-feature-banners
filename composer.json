@@ -1,6 +1,6 @@
 {
 	"name": "oilee80/silverstripe-feature-banners",
-	"description": "SilverStripe Feature Banners",
+	"description": "SilverStripe Feature Banners, with decorators for Image, Description, Primary & Secondary Links and Publish & Expiry dates",
 	"type": "silverstripe-module",
 	"keywords": ["silverstripe", "banner", "banners", "feature", "module"],
 	"license": "BSD-3-Clause",
