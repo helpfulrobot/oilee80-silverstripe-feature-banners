@@ -1,9 +1,9 @@
 <?php
 
-class FeatureBanner_Description_Decorator extends DataExtension {
+class FeatureBanner_Description_Decorator extends DataExtension
+{
 
-	private static $db = array(
-		'Description' => 'HTMLText'
-	);
-
+    private static $db = array(
+        'Description' => 'HTMLText'
+    );
 }
